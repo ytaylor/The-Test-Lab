@@ -21,8 +21,8 @@ Asegúrate de tener [Node.js](https://nodejs.org/en) y [npm](https://www.npmjs.c
 1.  **Clona el repositorio:**
 
     ```bash
-    git clone [TU-URL-DEL-REPOSITORIO]
-    cd [nombre-del-repo]
+    git clone [[TU-URL-DEL-REPOSITORIO]](https://github.com/ytaylor/The-Test-Lab.git)
+    cd The-Test-Lab
     ```
 
 2.  **Instala las dependencias:**
@@ -47,6 +47,12 @@ La aplicación contiene un formulario de inicio de sesión que simula la interac
 | **`App.jsx`** | Componente principal que integra el `LoginForm` y simula la lógica asíncrona de autenticación con `setTimeout`. | **Estructura:** Separa la lógica de negocio (`handleLogin`) del componente de presentación (`LoginForm`). |
 
 -----
+## Video Explicativo
+Aquí tienes un [video explicativo](https://youtu.be/CuobY57kw20) que detalla cómo funciona el proyecto y cómo puedes extenderlo con más pruebas.
+
+[![Alt text](https://img.youtube.com/vi/CuobY57kw20/0.jpg)](https://www.youtube.com/watch?v=CuobY57kw20)
+
+---  
 
 ## ✅ Ejecución de Pruebas
 
@@ -61,7 +67,6 @@ yarn test
 ### Consejos de Testing:
 
   * **Enfoque en el usuario:** Las pruebas están escritas para verificar el resultado desde la perspectiva del usuario (ej. ¿Se deshabilita el botón? ¿Aparece el texto?).
-  * **Aislamiento:** Usamos **`jest.fn()`** en `LoginForm.test.js` para **simular** la función `handleLogin` de `App.jsx`, aislando el formulario y evitando que las pruebas esperen el `setTimeout` real.
 
 -----
 
@@ -92,5 +97,13 @@ yarn start
 ```
 
 -----
+## Playwright 
+
+Este proyecto también incluye pruebas de extremo a extremo (E2E) utilizando Playwright. Para ejecutar las pruebas de Playwright, asegúrate de tener Playwright instalado y luego ejecuta:
+
+```bash
+npx playwright test
+```    
+---
 
 ¡Felices Pruebas\! Siéntete libre de añadir más ejercicios de testing.
