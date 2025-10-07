@@ -13,7 +13,6 @@ function LoginForm({ onSubmit }) {
     };
 
     return (
-        // CLASE AÑADIDA AQUÍ
         <form onSubmit={handleSubmit} className="login-form">
             <h2>Inicia Sesión</h2>
 
